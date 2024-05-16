@@ -56,6 +56,14 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: rgb(234, 232, 232);
+}
+
+button:active {
+  background-color: rgb(201, 200, 200);
+}
+
 .numbers {
   display: flex;
   flex-direction: column;
