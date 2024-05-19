@@ -85,11 +85,15 @@ button:active {
 }
 
 .clear-btn {
-  background-color: rgb(225, 120, 120);
+  background-color: hsl(0, 100%, 75%);
+}
+
+.clear-btn:hover {
+  background-color: hsl(0, 100%, 65%);
 }
 
 .clear-btn:active {
-  background-color: rgb(210, 68, 68);
+  background-color: hsl(0, 100%, 55%);
   color: rgb(201, 201, 201);
 }
 
