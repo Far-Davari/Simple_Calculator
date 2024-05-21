@@ -19,32 +19,40 @@
       <div class="input">
         <div class="numbers">
           <div>
-            <button onclick="updateOutput('1')">1</button>
-            <button onclick="updateOutput('2')">2</button>
-            <button onclick="updateOutput('3')">3</button>
+            <button onclick="calculateFunc('1')">1</button>
+            <button onclick="calculateFunc('2')">2</button>
+            <button onclick="calculateFunc('3')">3</button>
           </div>
           <div>
-            <button onclick="updateOutput('4')">4</button>
-            <button onclick="updateOutput('5')">5</button>
-            <button onclick="updateOutput('6')">6</button>
+            <button onclick="calculateFunc('4')">4</button>
+            <button onclick="calculateFunc('5')">5</button>
+            <button onclick="calculateFunc('6')">6</button>
           </div>
           <div>
-            <button onclick="updateOutput('7')">7</button>
-            <button onclick="updateOutput('8')">8</button>
-            <button onclick="updateOutput('9')">9</button>
+            <button onclick="calculateFunc('7')">7</button>
+            <button onclick="calculateFunc('8')">8</button>
+            <button onclick="calculateFunc('9')">9</button>
           </div>
           <div>
-            <button class="clear-btn" onclick="clearOutput">C</button>
-            <button onclick="updateOutput('0')">0</button>
-            <button onclick="updateOutput('.')">.</button>
+            <button class="clear-btn" onclick="
+                calculation = 0;
+                console.log(calculation);
+                updateOutput(calculation);
+              ">C</button>
+            <button onclick="calculateFunc('0')">0</button>
+            <button onclick="calculateFunc('.')">.</button>
           </div>
         </div>
         <!-- operators -->
         <div class="operators">
-          <button onclick="updateOutput(' * ')">*</button>
-          <button onclick="updateOutput(' / ')">/</button>
-          <button onclick="updateOutput(' + ')">+</button>
-          <button class="equal-sign" onclick="calculateFunc()">=</button>
+          <button onclick="calculateFunc(' * ')">*</button>
+          <button onclick="calculateFunc(' / ')">/</button>
+          <button onclick="calculateFunc(' + ')">+</button>
+          <button class="equal-sign" onclick="
+            calculation = eval(calculation)
+            console.log(calculation)
+            updateOutput(calculation)
+          ">=</button>
         </div>
       </div>
     </div>
