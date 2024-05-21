@@ -49,13 +49,13 @@
           <button onclick="calculateFunc(' / ')">/</button>
           <button onclick="calculateFunc(' + ')">+</button>
           <button class="equal-sign" onclick="
-            calculation = eval(calculation)
+            calculation = eval(calculation);
             
             localStorage.setItem('calculation', calculation);
 
-            console.log(calculation)
-            updateOutput(calculation)
-            showLocal()
+            console.log(calculation);
+            updateOutput(calculation);
+            showLocal();
           ">=</button>
         </div>
       </div>
